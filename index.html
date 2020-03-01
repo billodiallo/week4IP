@@ -8,37 +8,36 @@
       <title>Your Dream Pizza room</title>
   </head>
   <body>
+    <div class="container-fluid text-white">
+      <div class="row min-vh-100 text-center justify-content-center align-items-center flex-column" id="landing-page">
+        <img src="img/ll.jpg" alt="">
+        <h1><br> <strong>Welcome to the Best room to order your Pizza </br><br> Fresh out of the oven</h1></br></strong>             
+    </div>
+  </div>
 
-    <h1>Welcome to the Best room to order your Pizza</h1>
-    <div class="container-fluid">
-      <div id = "menu-outer">
-        <div class="table">
-            <ul id="horizontal-list">
-              <li> SIZE </li>
-              <li>CRUST</li>
-              <li> TOPPING</li>
-            </ul>
-
-            <form class="form-horizontal flex-column" onsubmit="return false">
+            <form class="form-horizontal flex-column text-center" id="new-order"onsubmit="return false"> 
               <div class="form-group">
-                <div class="row-justify-center">
-                  <label for="size">Choose Pizza SIZE:</label>
-          <select id="size" name="size">
-            <option value="Small">Small</option>
-            <option value="Medium">Medium</option>
-            <option value="Large">Large</option></select>
+                <div class="row-justify-center text-center" id="sizing">
+                  <p> <strong><br>Choose the Size of the Pizza </strong></br></strong></p>
+                  <label for="size"></label>
+                  <select id="size" name="size">
+                    <option value="Small">Small</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Large">Large</option></select>
                 </div>
+              </div>
+              
                 <div class="form-group">
-                <div class="radio">
-                  <p> Choose your crust </p>
+                  <div class="radio">
+                  <p><strong><br>Choose your crust</strong></p></p> 
                   <label for ="crust" Chose type of crust>
                     <input type="radio" name="crust" value="Crispy" checked>
                     cryspy
                   </label>
-                </div>
+                  </div>
                 <div class="radio">
                   <label>
-                    <input type="radio" name="crust" value="Stuffed">
+                    <input type="radio" name="crust" value="Stuffed" checked>
                     Stuffed
                   </label>
                 </div>
@@ -48,14 +47,47 @@
                     Gluten-free
                     </label>
                     </div>
-  
               </div>
-            </form>
-              <h1> PLACE ORDER</h1>
+            <div class="for-group" id="toppintop">
+            <p><strong>topping would you like ?</strong></p>
+<select name="HOMEMADE PIZZA ">
+<option value ="egg">Bacon & egg</option>
+<option value ="bacon">Bacon, onion, potato & spinach</option>
+<option value ="pineapple">Ham, pineapple & cheese</option>
+<option value ="mushom">Ham, mushroom & rocket</option>
+<option value ="watermelon">Chicken, cheese, spinach, tomato, mushroom, shallots</option>
+<option value ="cheese">Chicken, pesto, goat's cheese & sun-dried tomato</option>
+<option value ="salami">Salami & mozzarella</option>
+</select> 
+</div>
 
-          </div>
-        </div>
-      </div>
+<div class="form-group">
+  <p><strong><br>Delevery </strong></p>
+  <select class="custom-select " id="inlineFormCustomSelect">
+    <option value="delivery">Delevery</option>
+    <option value="not delevery">not Delevery</option>
+   </select>
+  </div>
+  
 
-  </body>
+<div class="form-group">
+  <p> <strong> <br>PLACE TO ORDER</strong></strong> </p>   
+<button type="submit" class="btn btn-primary btn-lg" id="order">ORDER</button>
+<button type="reset" class="btn btn-secondary btn-lg">RESET</button>
+</div>
+</form> 
+
+
+
+
+<div class="container text-center text-black">
+  <p> <strong>Follow us on Social Media</strong></p>
+  <img src="img/twitter.png" alt="" width="">
+  <img src="facebook.png" alt="" width="">
+    <img src="img/skype.png" alt="" width="">
+    <p> <strong> stay with us la gondole plus</strong></p>
+</div>
+
+</body>
 </html>
+
