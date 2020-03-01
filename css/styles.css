@@ -1,13 +1,6 @@
-
-
-
-body{
-  font-family: serif;
-  /*background: url("../img/pizza.jpg");
-  background-color: transparent;
-  background-repeat: no-repeat;
+#landing-page {
+  background: url("../img/pizza.jpg");
   background-size: cover;
-  background-attachment: fixed;
-  min-height: 100vh;
+  background-repeat: no-repeat
 
 }
