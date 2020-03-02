@@ -144,10 +144,28 @@
       </table>
     </div>
     
-  
-</body>
 
-
+    <h2 class="text-center summary">Provide location details</h2>
+    
+    </div>
+    <div class="d-block mx-auto text-center">
+    <button type="submit" class="deliver">Make Delivery</button>
+    <button type="submit" class="pick-up" id="pickup">Pick Up</button>
+    </div>
+    
+    <!-- make delivery pop-up-->
+    <div class="cdata-overlay" style="display: none;">
+      <div class="customerdata row">
+          <div class="col-sm-3"></div>
+          <form action="" class="form-group col-sm-6 data" id="data">
+              <input type="text" class="form-control cdata" id="name" placeholder="Enter your Name:">
+              <input type="text" class="form-control cdata" id="phone" placeholder="Enter your phone number: ">
+              <input type="text" class="form-control cdata" id="location" placeholder="Enter the location: ">
+              <button class="btn bg-info text-center d-block mx-auto go" id="go" type="submit">Make
+    
+              </button>
+          </form>
+    
 </html>
 
     
