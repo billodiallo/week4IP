@@ -31,4 +31,59 @@ $(document).ready(function(){
         var number = parseInt($("#number").val());
   
         
-        
+        let myToppings = [];
+        if(!isNaN(toppings)){
+            myToppings.push(toppings);
+    
+        }
+    
+        if(!isNaN(toppings1)){
+            myToppings.push(toppings1);
+    
+        }
+        let costofToppings = 0
+        if(myToppings.length){
+          for(i in myToppings){
+              costofToppings += myToppings[i];
+          }
+        }
+        let cost = size + crust+ costofToppings
+        var total = cost*number;
+        var grandTotal = 0;
+  
+        $('table#tablecart').append('<tr>'+'<td>'+$("#flavour option:selected").text()+'</td>'+'<td>'+ $("#size option:selected").text()+'</td>'+'<td>'+$("#crust option:selected").text()+'</td>'+ '<td>'+$("#toppings option:selected").text()+'</td>'+'<td id="number">'+number+'</td>' +'<td id="total">'+total+'</td>'+'</tr>');
+  
+            //Deliver
+      $(".deliver").click(function () {
+        $('.summary').slideUp();
+        $('#list').slideUp();
+        $('.summary').text("Provide location details").slideDown();
+        $('.deliver').hide(1000);
+        $('.delivernot').hide(1000);
+        $('.cdata-overlay').slideDown();
+        $('#pickup').hide();
+    });
+  
+    $("#pickup").click(function(event){
+      event.preventDefault();
+      alert('Pick your order at our nearest pickup station');
+      $('.deliver').hide();
+  
+    });
+  
+    $("#go").click(function(event){
+      event.preventDefault();
+      var name = ($("#name").val());
+      var location =($("#location").val());
+  
+      alert(name + ' your delivery will be made at ' + location);
+      $('.cdata-overlay').hide();
+  
+    });
+  
+    $("#refresh").click(function(){
+      $('#my-form').reset();
+    });
+    });
+  });
+    
