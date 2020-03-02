@@ -21,5 +21,14 @@ $(document).ready(function(){
       );
     });
 
-    
-    
+    $("#checkout").click(function(event){
+        event.preventDefault();
+        var flavour = $("#flavour option:selected").val();
+        var size = parseInt($("#size option:selected").val());
+        var crust = parseInt($("#crust option:selected").val());
+        var toppings = parseInt($("#toppings option:selected").val());
+        var toppings1 = parseInt($("#toppings1 option:selected").val());
+        var number = parseInt($("#number").val());
+  
+        
+        
