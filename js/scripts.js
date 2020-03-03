@@ -27,7 +27,7 @@ $(document).ready(function(){
         var size = parseInt($("#size option:selected").val());
         var crust = parseInt($("#crust option:selected").val());
         var toppings = parseInt($("#toppings option:selected").val());
-        var toppings1 = parseInt($("#toppings1 option:selected").val());
+        // var toppings1 = parseInt($("#toppings1 option:selected").val());
         var number = parseInt($("#number").val());
   
         
@@ -37,10 +37,10 @@ $(document).ready(function(){
     
         }
     
-        if(!isNaN(toppings1)){
-            myToppings.push(toppings1);
+        // if(!isNaN(toppings1)){
+        //     myToppings.push(toppings1);
     
-        }
+        // }
         let costofToppings = 0
         if(myToppings.length){
           for(i in myToppings){
