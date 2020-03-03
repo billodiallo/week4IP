@@ -80,6 +80,29 @@ button {
   text-decoration: none;
 }
 
+#title{
+  margin-left: 9em;
+}
+
+#navC {
+  color: green !important;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: large;
+  justify-content: center;
+}
+
+#navB {
+  color: red;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: large;
+}
+
+#navA {
+  color: green !important;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: large;
+}
+
  .nav li a {
   text-decoration: none;
   font-weight: lighter;
